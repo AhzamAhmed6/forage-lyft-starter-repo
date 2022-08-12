@@ -4,7 +4,7 @@ from calendar import c
 # Realization
 
 class Engine(ABC):
-    def __init__(self, last_service_mileage: int, current_milage: int, warning_light: bool):
+    def __init__(self, last_service_mileage: int=0, current_milage: int=0, warning_light: bool=False):
         self.last_service_mileage=last_service_mileage
         self.current_milage=current_milage
         self.warning_light=warning_light
