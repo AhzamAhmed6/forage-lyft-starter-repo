@@ -18,7 +18,7 @@ class SpindlerBattery(Battery):
         
         
     def need_service(self):
-        is_need_service = self.current_date-self.last_service_date>datetime.timedelta(730)
+        is_need_service = self.current_date-self.last_service_date>datetime.timedelta(1095)
         return is_need_service
 
 
